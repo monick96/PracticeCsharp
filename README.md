@@ -16,3 +16,21 @@ b) ¿Cuántos participantes obtuvieron menos de 50 puntos?
 c) Total de puntos obtenidos.
 
 d) Número de participante, edad y puntos obtenidos del participante de menor número.
+
+### 3- sentencia simple sueldo
+Dadas las horas mensuales trabajadas de un empleado y el valor en pesos de cada hora, calcular el
+sueldo que se abonará al finalizar el mes.
+
+### 4- Calcular perimetro triangulo
+Elaborar un algoritmo que lea los 3 lados de un triángulo cualquiera y calcule su perímetro
+considerando A, B y C como lados. 
+
+### 5- Maraton
+Una maratón tiene 26 millas y 385 yardas. Sabiendo que una milla tiene 1760 yardas, calcular la
+distancia de la maratón en kilómetros. 
+
+### 6- ventas
+Una empresa comercializa 3 productos y desea saber cuál es el que le da mayor porcentaje de ventas.
+Para esto debe ingresar el total recaudado por cada producto y el valor de cada uno. Tener en cuenta
+que el programa debe informar la cantidad vendida de cada producto, y su total de ventas y el
+porcentaje que dicha cantidad de ventas significa del total. 
