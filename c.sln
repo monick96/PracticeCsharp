@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentenciaSimpleMaraton", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ventasSentenciaSimple", "ventasSentenciaSimple\ventasSentenciaSimple.csproj", "{70C98E63-C1F0-4AA3-B466-982BAE93E23F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViajeSentenciaSimple", "ViajeSentenciaSimple\ViajeSentenciaSimple.csproj", "{97E22776-488D-4248-BD71-FC83CCCA10F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumoCombustibleSentenciaSimple", "ConsumoCombustibleSentenciaSimple\ConsumoCombustibleSentenciaSimple.csproj", "{ECB23DE3-0E80-4667-9C01-B1CEB5A69E0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{70C98E63-C1F0-4AA3-B466-982BAE93E23F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70C98E63-C1F0-4AA3-B466-982BAE93E23F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70C98E63-C1F0-4AA3-B466-982BAE93E23F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E22776-488D-4248-BD71-FC83CCCA10F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E22776-488D-4248-BD71-FC83CCCA10F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E22776-488D-4248-BD71-FC83CCCA10F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E22776-488D-4248-BD71-FC83CCCA10F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB23DE3-0E80-4667-9C01-B1CEB5A69E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB23DE3-0E80-4667-9C01-B1CEB5A69E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB23DE3-0E80-4667-9C01-B1CEB5A69E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB23DE3-0E80-4667-9C01-B1CEB5A69E0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

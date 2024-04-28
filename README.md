@@ -34,3 +34,19 @@ Una empresa comercializa 3 productos y desea saber cuál es el que le da mayor p
 Para esto debe ingresar el total recaudado por cada producto y el valor de cada uno. Tener en cuenta
 que el programa debe informar la cantidad vendida de cada producto, y su total de ventas y el
 porcentaje que dicha cantidad de ventas significa del total. 
+
+### 7- Viaje
+Una familia de 4 personas desea irse de viaje. 
+Para esto deben tener en cuenta lo siguiente:
+ a) Precio de pasajes aéreos. 
+ b) Precio de un hotel por noche. 
+ c) Cantidad de noches. 
+ d) Alquiler de un auto (precio por día). 
+ El programa debe calcular el total que saldrá el viaje, teniendo en cuenta que el
+alquiler del auto será por la mitad de la estadía
+
+### 8- consumo combustible
+Un vehículo consume 12 litros de combustible cada 100 km a 130 km/h. Se desea realizar un
+programa que calcule el total consumido en un viaje de 500 km. Para esto el programa debe pedir la
+velocidad medida en 3 puntos del viaje. Con el promedio de las velocidades, calcular el total de
+combustible consumido.
