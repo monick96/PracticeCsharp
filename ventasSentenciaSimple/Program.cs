@@ -17,7 +17,9 @@ namespace Ventas
             float precioP1;
             float precioP2;
             float precioP3;
-            int pMayorPorcentaje;
+            int porcentajeP1;
+            int porcentajeP2;
+            int porcentajeP3;
             int cantidadVendidoP1;
             int cantidadVendidoP2;
             int cantidadVendidoP3;
@@ -55,6 +57,21 @@ namespace Ventas
             Console.WriteLine("La cantidad vendida del producto 1 es de : " + cantidadVendidoP1 + " unidades");
             Console.WriteLine("La cantidad vendida del producto 2 es de : " + cantidadVendidoP2 + " unidades");
             Console.WriteLine("La cantidad vendida del producto 3 es de : " + cantidadVendidoP3 + " unidades");
+
+            //total ventas
+            totalVentas = totalRecaudadoP1 + totalRecaudadoP2 + totalRecaudadoP3;
+            Console.WriteLine("El total de ventas es de $" + totalVentas);
+
+            //porcentaje en el  total de ventas de cada total de producto
+            //total de ventas ----- 100%
+            //totalRecaudadoP1 ----- x%
+            porcentajeP1 = (int)((totalRecaudadoP1 * 100) / totalVentas);
+            porcentajeP2 = (int)((totalRecaudadoP2 * 100) / totalVentas);
+            porcentajeP3 = (int)((totalRecaudadoP3 * 100) / totalVentas);
+
+            Console.WriteLine("El  porcentaje de lo recaudado del producto 1 sobre el total, es de: " + porcentajeP1 + "%");
+            Console.WriteLine("El  porcentaje de lo recaudado del producto 2 sobre el total, es de: " + porcentajeP2 + "%");
+            Console.WriteLine("El  porcentaje de lo recaudado del producto 3 sobre el total, es de: " + porcentajeP3 + "%");
 
 
 
