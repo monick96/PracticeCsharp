@@ -17,6 +17,8 @@ c) Total de puntos obtenidos.
 
 d) Número de participante, edad y puntos obtenidos del participante de menor número.
 
+## Sentencia Simple
+
 ### 3- sentencia simple sueldo
 Dadas las horas mensuales trabajadas de un empleado y el valor en pesos de cada hora, calcular el
 sueldo que se abonará al finalizar el mes.
@@ -50,3 +52,32 @@ Un vehículo consume 12 litros de combustible cada 100 km a 130 km/h. Se desea r
 programa que calcule el total consumido en un viaje de 500 km. Para esto el programa debe pedir la
 velocidad medida en 3 puntos del viaje. Con el promedio de las velocidades, calcular el total de
 combustible consumido.
+
+### 9- Bateria 
+La batería de una tablet dura 5 horas reproduciendo video y 8 horas reproduciendo sólo audio. Se
+desea realizar un programa que calcule cuántas películas de N minutos podría ver con una sola carga
+y, por otro lado, cuántas veces debería cargar la batería para poder escuchar N canciones de 3
+minutos.
+
+## Estructuras de decision
+
+### Ejercicio Nº 1:
+Ingresar el saldo de una cuenta bancaria y el importe que desea extraer el propietario de la misma. Si el saldo
+es suficiente, calcular e informar el nuevo saldo. En caso contrario escribir el mensaje: “Saldo Insuficiente”
+
+### Ejercicio Nº 2:
+Calcular el sueldo de un operario, ingresando la cantidad de horas trabajadas y el valor que gana por hora. Si
+trabaja más de 40 hs, las horas extras se pagan a razón de $1,50 el valor de la hora.
+
+### Ejercicio Nº 3:
+Un negocio efectúa descuentos según el importe. Menor a $100 se aplica un descuento del 5%, entre $100 y
+$500 un descuento del 10%, y mayor a $500 un 20%.
+Informar el precio original, el descuento y el precio neto.
+
+### Ejercicio 4:
+Indicar el mes al que corresponde el número ingresado. En caso de no ser correcto, informar un mensaje de
+error.
+
+### Ejercicio Nº 5:
+Elaborar un algoritmo que permita indicar si el mes ingresado pertenece a la primera o segunda mitad del
+año: 

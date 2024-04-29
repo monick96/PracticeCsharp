@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViajeSentenciaSimple", "Via
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumoCombustibleSentenciaSimple", "ConsumoCombustibleSentenciaSimple\ConsumoCombustibleSentenciaSimple.csproj", "{ECB23DE3-0E80-4667-9C01-B1CEB5A69E0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bateria", "Bateria\Bateria.csproj", "{50BCF486-F334-4389-8554-EDEE5DEE7808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaldoEnCuenta", "SaldoEnCuenta\SaldoEnCuenta.csproj", "{ED338073-D394-4B31-ACD2-CD76F2A8CEB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{ECB23DE3-0E80-4667-9C01-B1CEB5A69E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECB23DE3-0E80-4667-9C01-B1CEB5A69E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECB23DE3-0E80-4667-9C01-B1CEB5A69E0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50BCF486-F334-4389-8554-EDEE5DEE7808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50BCF486-F334-4389-8554-EDEE5DEE7808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50BCF486-F334-4389-8554-EDEE5DEE7808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50BCF486-F334-4389-8554-EDEE5DEE7808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED338073-D394-4B31-ACD2-CD76F2A8CEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED338073-D394-4B31-ACD2-CD76F2A8CEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED338073-D394-4B31-ACD2-CD76F2A8CEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED338073-D394-4B31-ACD2-CD76F2A8CEB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
