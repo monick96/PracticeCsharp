@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bateria", "Bateria\Bateria.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaldoEnCuenta", "SaldoEnCuenta\SaldoEnCuenta.csproj", "{ED338073-D394-4B31-ACD2-CD76F2A8CEB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SueldoOperario", "SueldoOperario\SueldoOperario.csproj", "{8053DAA8-CB6F-4353-9B5F-34478FFBC064}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Descuentos", "Descuentos\Descuentos.csproj", "{02C6E4B2-8863-424D-9840-61E920110AA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{ED338073-D394-4B31-ACD2-CD76F2A8CEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED338073-D394-4B31-ACD2-CD76F2A8CEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED338073-D394-4B31-ACD2-CD76F2A8CEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8053DAA8-CB6F-4353-9B5F-34478FFBC064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8053DAA8-CB6F-4353-9B5F-34478FFBC064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8053DAA8-CB6F-4353-9B5F-34478FFBC064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8053DAA8-CB6F-4353-9B5F-34478FFBC064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02C6E4B2-8863-424D-9840-61E920110AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02C6E4B2-8863-424D-9840-61E920110AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02C6E4B2-8863-424D-9840-61E920110AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02C6E4B2-8863-424D-9840-61E920110AA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
