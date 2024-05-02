@@ -106,15 +106,19 @@ Dicho programa debe calcular e informar:
     d) Número de participante, edad y puntos obtenidos del participante de menor número.
 
 ## Mix Estructuras
+
 1. En una empresa trabajan n empleados cuyos sueldos oscilan entre $10000 y $50000, realizar un
 programa que lea los sueldos que cobra cada empleado e informe cuántos empleados cobran entre
 $10000 y $30000 y cuántos cobran más de $30000. Además, el programa deberá informar el importe
 que gasta la empresa en sueldos al personal.
+
 2. Realizar un programa que permita cargar dos listas de 15 valores cada una. Informar con un mensaje
 cuál de las dos listas tiene un valor acumulado mayor (mensajes "Lista 1 mayor", "Lista 2 mayor",
 "Listas iguales")
+
 3. Calcular e informar el promedio de los números pares menores a un valor definido por el usuario.
 Dicho número no debe ser superior a 1500.
+
 4. Realizar el algoritmo y codificar en lenguaje C, un programa para la organización de un torneo
 deportivo, que contenga la información correspondiente al número de participante, edad y puntos
 obtenidos en una competencia, y que finalice al ingresar número de participante 0 (inexistente).
@@ -123,22 +127,34 @@ a) ¿Cuántos participantes tienen más de 20 años?
 b) ¿Cuántos participantes obtuvieron menos de 50 puntos?
 c) Total de puntos obtenidos.
 d) Número de participante, edad y puntos obtenidos del participante de menor número.
+
 5. Realizar el algoritmo y codificar en lenguaje C, un programa para la organización de un concurso de
 belleza. De las 20 participantes del concurso, se irá registrando los siguientes datos:
+
 Número de participante.
 Puntos por inteligencia.
 Puntos por cultura general.
 Puntos por belleza.
+
 Se necesita informar por pantalla:
-- El total de puntos obtenidos entre todas las participantes en cada una de las categorías (total en
-inteligencia, total en belleza y total en cultura general).
-- Cuántas participantes tiene como menor puntaje en la categoría inteligencia, cuántas en la categoría
-cultura general y cuántas en belleza.
-- Puntaje total acumulado por todas las participantes en las tres categorías.
-- Número de participante y puntaje general, de la concursante de mayor puntaje general.
+
+    - El total de puntos obtenidos entre todas las participantes en cada una de las categorías (total en
+        inteligencia, total en belleza y total en cultura general).
+
+    - Cuántas participantes tiene como menor puntaje en la categoría inteligencia, cuántas en la categoría
+        cultura general y cuántas en belleza.
+
+    - Puntaje total acumulado por todas las participantes en las tres categorías.
+
+    - Número de participante y puntaje general, de la concursante de mayor puntaje general.
+
 6. Realizar el algoritmo (diagrama y codificación) de un programa utilizado para efectuar un estudio en
 una biblioteca municipal sobre el préstamo de los siguientes libros:
 ![alt text](<Captura de pantalla 2024-04-30 235625.png>)
+
+1245  240
+3285 315
+5872 127
 
 Para registrar el mismo, deberán indicarse código de libro y cantidad que desea retirar, sabiendo que
 no pueden retirarse más de cinco por préstamo. En caso de que el código sea igual a cero, se
