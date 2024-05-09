@@ -20,7 +20,7 @@ namespace SueldosInstituto
             // -numero empleado
             // -sueldo a pagar $xxxx
             // -bonificacion $xxxx
-            // -bonificacion $xxxx
+            // -aguinaldo $xxxx
             // -total a pagar $xxxx
             // Finalmente, se desea conocer número de empleado y sueldo total a pagar de quien recibe el mayor
             // sueldo total.

@@ -1,5 +1,5 @@
 # Ejercicios de clase
-## Sentencia Simple
+## Sentencia Simple Secuencial
 
 ### 3- sentencia simple sueldo
 Dadas las horas mensuales trabajadas de un empleado y el valor en pesos de cada hora, calcular el
@@ -184,3 +184,7 @@ información y principalmente la cantidad de decimales, si corresponde:
 ![alt text](image.png)
 Finalmente, se desea conocer número de empleado y sueldo total a pagar de quien recibe el mayor
 sueldo total.
+
+# Funciones
+
+### 1 - Practica primera funcion sumar dos numeros declarados
