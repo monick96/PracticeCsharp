@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumerosEntre", "NumerosEntre\NumerosEntre.csproj", "{E1617A66-70AF-4E26-8201-C94317828848}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1617A66-70AF-4E26-8201-C94317828848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1617A66-70AF-4E26-8201-C94317828848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1617A66-70AF-4E26-8201-C94317828848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1617A66-70AF-4E26-8201-C94317828848}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBAA37A0-BF07-4D40-BD4F-64748918EA84}
+	EndGlobalSection
+EndGlobal

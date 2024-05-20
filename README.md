@@ -186,5 +186,80 @@ Finalmente, se desea conocer número de empleado y sueldo total a pagar de quien
 sueldo total.
 
 # Funciones
+## ejercicios MIX
+- Ejercicio 1:
+Realizar programa que permita crear una función, la cual deberá recibir el nombre CalcularMayor,
+recibiendo para trabajar tres números distintos e informe el mayor de ellos.
+Crear otra función, la cual deberá recibir el nombre CalcularMenor, recibiendo para trabajar los mismos
+tres números distintos e informe el menor de ellos.
+El programa principal ingresa (de ser necesario) los datos, y deberá realizar convenientes llamados a
+la función e informar de ser requerido los resultados.
 
-### 1 - Practica primera funcion sumar dos numeros declarados
+- Ejercicio 2: Por Valor
+Implementar una función que reciba dos enteros y luego imprima de uno en uno desde el valor menor
+hasta el valor mayor.
+
+- Ejercicio 3: Por Referencia
+Confeccionar una función que reciba por referencia tres enteros y nos los retorne en forma ordenada
+de menor a mayor.
+
+- Ejercicio 4: Por Valor
+Realizar un programa, que a partir de una función que permita calcular si un número es múltiplo de
+otro, y retorne el mensaje correspondiente.
+
+- Ejercicio 5:
+Realizar el algoritmo y codificar en lenguaje C, un programa que permita crear una función, la cual
+deberá nombrarse como “cuenta”, recibiendo para trabajar dos números correspondientes al número de
+cuenta bancaria y el importe que se desea extraer, y en la cual se deberá solicitar el saldo de la cuenta. Si el
+saldo es suficiente, deberá calcular e informar el nuevo saldo. En caso contrario informar “Saldo insuficiente”.
+El programa principal ingresa (de ser necesario) los datos, y deberá realizar convenientes llamados a
+la función e informar de ser requerido los resultados.
+
+- Ejercicio 6:
+Se desea realizar un programa para calcular los sueldos de una empresa. Para ello, se deberá ingresar el
+número de empleado, distinto de cero, y el sueldo bruto que le corresponde al mismo.
+Para calcular el sueldo neto, se debe tener en cuenta que debe aplicarse un 11% de descuento
+correspondiente al aporte jubilatorio y un 3% al pago de la obra social a la cual está afiliado el empleado.
+Por este mes, se aumentará el sueldo según el porcentaje indicado por el usuario que dependerá del
+desempeño de cada empleado.
+En caso de que el empleado haya tenido inasistencias al trabajo, se deberá descontar un 8% del sueldo bruto
+por cada falta cometida.
+    - OBSERVACION:
+    El ejercicio debe ser resuelto utilizando las siguientes funciones:
+         - 1º FUNCION: Calcular los descuentos y/o bonificaciones que recibirán los empleados
+         - 2º FUNCION: Calcular el sueldo neto, aplicando los descuentos y bonificaciones obtenidas.
+        - 3º FUNCION: Imprimir en pantalla el recibo de sueldo detallado de la siguiente manera:
+
+            NUMERO DE EMPLEADO: XXXX
+
+
+            SUELDO BRUTO $XXXX.XX
+
+
+            DESC. JUBILACION $XXXX.XX
+
+            DESC. O.SOCIAL $XXXX.XX
+
+            AJUSTE POR INASISTENCIAS $XXXX.XX
+
+            BONIFICACION $XXXX.XX
+
+            SUELDO NETO $XXXX.XX
+
+
+## ejercicios MIX 2
+0. Practica primera funcion sumar dos numeros declarados
+1. Armar una función, a la que se le pase como parámetro un número N, y muestre por pantalla N veces el mensaje: “Módulo ejecutándose”.
+2. Escribir una función que nos salude, pasándole un nombre por parámetro. Su salida debe decir por ejemplo ”Hola Aristoteles, ¿cómo estás?”.
+3.  Diseñar una función que tenga como parámetros dos números, y que calcule el máximo.
+4.  Idem al anterior pero que calcule el máximo de 3 números.
+5.  Idem al anterior pero que calcule el máximo de un array de n elementos.
+6. Se necesita crear una función a la que se le pasan por parámetro dos enteros y muestra todos los números comprendidos entre ellos, inclusive.
+7. Armar una función que muestre en pantalla el doble del valor que se le pasa como parámetro.
+8. Se necesita una función que calcule y muestre en pantalla el área o el volumen de un cilindro, según se especifique. Para distinguir un caso de otro, además de pasarle por parámetro el radio y la altura, se le pasará el carácter ’a’ (para área) o ’v’ (para el volumen).
+
+9. Idem al anterior pero que devuelva un array con ambos cálculos: el área y el volumen. 
+
+10. Crear una función a la que se le pasa un número entero y devuelve la cantidad de divisores primos que tiene.
+11.  Crear una función a la que se le pasa un número entero y devuelve un array con los divisores primos de dicho número.
+
