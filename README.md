@@ -263,18 +263,18 @@ por cada falta cometida.
 10. Crear una función a la que se le pasa un número entero y devuelve la cantidad de divisores primos que tiene.
 11.  Crear una función a la que se le pasa un número entero y devuelve un array con los divisores primos de dicho número.
 
-##  *Analizar y comentar un programa --> AnalisisPetTicket
-Escribir comentarios en el c´odigo para cada linea en particular, qu´e hace y por qu´e lo
+## Analizar y comentar un programa --> AnalisisPetTicket
+- Escribir comentarios en el c´odigo para cada linea en particular, qu´e hace y por qu´e lo
 hace con relaci´on al programa, NO transcribir el c´odigo en prosa!
 Por ejemplo si dice
 A = 5
 No poner solamente ’se asigna a la variable A el valor 5’ sino ademas para qu´e se le asigna
 el valor 5, qu´e sentido tiene esto dentro de la funci´on, algoritmo, programa con respecto a la
 soluci´on.
-Adem´as, hay que comentar qu´e hace cada funci´on en general, su prop´osito, que par´ametros
+- Adem´as, hay que comentar qu´e hace cada funci´on en general, su prop´osito, que par´ametros
 recibe, el tipo, qu´e significa cada par´ametro y para qu´e se lo usa.
- Se debe incluir tambi´en un comentario general que refleje para qu´e sirve todo este c´odigo
+ - Se debe incluir tambi´en un comentario general que refleje para qu´e sirve todo este c´odigo
 fuente.
-Por ultimo, que limitaciones tiene el programa, que validaciones agregarıan y que otras
+- Por ultimo, que limitaciones tiene el programa, que validaciones agregarıan y que otras
 cosas cambiar´ıan?
 
