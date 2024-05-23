@@ -10,6 +10,8 @@
 
             int suma = sumar(num1,num2);
             System.Console.WriteLine(suma);
+            System.Console.WriteLine(sumar(5,12));
+
         }
 
         //Funciones

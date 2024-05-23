@@ -15,14 +15,16 @@ namespace CalculoMaximo
             int num1 = 5;
             int num2 = 6;
             int num3 = 7;
-            int[] ints = new int[] {300, num2, num3, 50, 20, 30, 60, 100, 12, 58 };
+            int[] ints = new int[] { 300, num2, num3, 50, 20, 30, 60, 100, 12, 58 };
 
             Console.WriteLine("Maximo de dos numeros");
             Console.WriteLine(maximo(num1,num2));
 
+            //4.  Idem al anterior pero que calcule el máximo de 3 números.
             Console.WriteLine("Maximo de tres numeros");
             Console.WriteLine(maximo1(num1,num2,num3));
 
+            //5.  Idem al anterior pero que calcule el máximo de un array de n elementos.
             Console.WriteLine("Maximo de un array");
             Console.WriteLine(maximo3(ints));
 
@@ -78,7 +80,7 @@ namespace CalculoMaximo
                 {
                     result = $"El numero {max}, es el mayor";
                 }
-                                        
+                
             }
             
             return result;
