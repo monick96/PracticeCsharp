@@ -15,7 +15,7 @@ namespace CalculoMaximo
             int num1 = 5;
             int num2 = 6;
             int num3 = 7;
-            int[] ints = new int[] { num1, num2, num3, 50, 20, 30, 60, 100, 12, 58 };
+            int[] ints = new int[] {300, num2, num3, 50, 20, 30, 60, 100, 12, 58 };
 
             Console.WriteLine("Maximo de dos numeros");
             Console.WriteLine(maximo(num1,num2));
@@ -71,9 +71,14 @@ namespace CalculoMaximo
             {
                 if (arrayNums[i] > max )
                 {
+                    max = arrayNums[i];
                     result = $"El numero {arrayNums[i]}, es el mayor";
                 }
-                
+                else
+                {
+                    result = $"El numero {max}, es el mayor";
+                }
+                                        
             }
             
             return result;
