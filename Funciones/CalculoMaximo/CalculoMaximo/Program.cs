@@ -23,14 +23,9 @@ namespace CalculoMaximo
 
             //invocacion de funcion
             int resp = maximo(num1, num2);
-            if (resp == 0)
-            {
-                Console.WriteLine(" Los numeros son iguales");
-            }
-            else
-            {
-                Console.WriteLine($"{resp} es mayor");
-            }
+            
+            Console.WriteLine($"{resp} es mayor");
+            
             //fin punto 3
 
             ////////////////////////////////////////////////////////////////////////
@@ -52,14 +47,8 @@ namespace CalculoMaximo
             num3 = int.Parse(Console.ReadLine());
             //invocacion de funcion
             int resp2 = maximo3N(num1, num2,num3);
-            if (resp2 == 0)
-            {
-                Console.WriteLine(" Los numeros son iguales");
-            }
-            else
-            {
-                Console.WriteLine($"{resp2} es mayor");
-            }
+            
+            Console.WriteLine($"{resp2} es mayor");
 
             //fin punto 4
 
@@ -90,14 +79,7 @@ namespace CalculoMaximo
 
             //invocacion de funcion
             int resp3 = maximoA(ints);
-            if (resp3 == 0)
-            {
-                Console.WriteLine(" Los numeros son iguales");
-            }
-            else
-            {
-                Console.WriteLine($"{resp3} es mayor");
-            }
+            Console.WriteLine($"{resp3} es mayor");
 
             //fin punto 5
 
@@ -109,11 +91,7 @@ namespace CalculoMaximo
         static int maximo(int n1, int n2 ) 
         {
             int result; 
-            if ( n1 == n2 ) 
-            {
-                result = 0;
-            }
-            else if(n1 > n2)
+            if(n1 > n2)
             {
                 result = n1;
             }
@@ -137,14 +115,11 @@ namespace CalculoMaximo
             {
                 result = n2;
             }
-            else if (n3 > n1 && n3 > n2)
+            else 
             {
                 result = n3;
             }
-            else
-            {
-                result = 0;
-            }
+          
             return result;
         }
 
@@ -152,30 +127,17 @@ namespace CalculoMaximo
         {
             //la posicion 0 la uso como mi maximo para comparar
             int max = arrayNums[0]; 
-            int igualdad = 0;
 
             for (int i = 1; i < arrayNums.Length; i++)
             {
                 if (arrayNums[i] > max )
                 {
                     max = arrayNums[i];
-                }
-                else if (arrayNums[i] == max )
-                {
-                    igualdad ++;
-                }   
-            }
-            //verificacion de si los numeros son todos iguales en el array
-            //resto uno por que al array en posicion cero lo use como bandera para el maximo
-            if (igualdad == arrayNums.Length -1)
-            {
-                max = 0;
+                } 
             }
             
             return max;
-            
-
-            
+   
         }
     }
 }
