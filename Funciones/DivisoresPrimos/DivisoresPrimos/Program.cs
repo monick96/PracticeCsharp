@@ -57,7 +57,8 @@ namespace DivisoresPrimos
 
             // Encuentra divisores
 
-            // Añade el propio número si es mayor que 1 (caso del número primo divisible solo x si mismo)
+            // Añade el propio número si es mayor que 1
+            // (caso del número primo divisible solo x si mismo)
             if (num > 1)
             {
                 div[position] = num;
@@ -141,23 +142,28 @@ namespace DivisoresPrimos
         
         static bool EsPrimo(int num)
         {
+            bool verificacion = true;
             // Los números menores o iguales a 1 no son primos
-            if (num <= 1) return false;
+            if (num <= 1) 
+                verificacion = false;
 
             // 2 es el único número primo par
-            if (num == 2) return true;
+            if (num == 2) 
+                verificacion = true;
 
             // Números pares mayores que 2 no son primos
-            if (num % 2 == 0) return false; 
+            if (num % 2 == 0) 
+                verificacion = false; 
 
             // Revisa los números impares desde 3 hasta la mitad del número
             for (int i = 3; i <= (num/2); i += 2)
             {
-                if (num % i == 0) return false; // Si num es divisible por i, no es primo
+                if (num % i == 0) 
+                    verificacion = false; // Si num es divisible por i, no es primo
             }
 
             // Si no se encontró ningún divisor, es primo
-            return true; 
+            return verificacion; 
         }
 
     }
