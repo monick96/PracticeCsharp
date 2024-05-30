@@ -100,6 +100,7 @@ namespace MaximoComunDivisor
                 int arrayT;
                 int[] nums;
                 int result;
+
                 switch (opcion)
                 {
                     case 1:
