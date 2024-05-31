@@ -186,6 +186,42 @@ Finalmente, se desea conocer número de empleado y sueldo total a pagar de quien
 sueldo total.
 
 # Funciones
+## ejercicios MIX 2
+0. Practica primera funcion sumar dos numeros declarados
+1. Armar una función, a la que se le pase como parámetro un número N, y muestre por pantalla N veces el mensaje: “Módulo ejecutándose”.
+2. Escribir una función que nos salude, pasándole un nombre por parámetro. Su salida debe decir por ejemplo ”Hola Aristoteles, ¿cómo estás?”.
+3.  Diseñar una función que tenga como parámetros dos números, y que calcule el máximo.
+4.  Idem al anterior pero que calcule el máximo de 3 números.
+5.  Idem al anterior pero que calcule el máximo de un array de n elementos.
+6. Se necesita crear una función a la que se le pasan por parámetro dos enteros y muestra todos los números comprendidos entre ellos, inclusive.
+7. Armar una función que muestre en pantalla el doble del valor que se le pasa como parámetro.
+8. Se necesita una función que calcule y muestre en pantalla el área o el volumen de un cilindro, según se especifique. Para distinguir un caso de otro, además de pasarle por parámetro el radio y la altura, se le pasará el carácter ’a’ (para área) o ’v’ (para el volumen).
+
+9. Idem al anterior pero que devuelva un array con ambos cálculos: el área y el volumen. 
+
+10. Crear una función a la que se le pasa un número entero y devuelve la cantidad de divisores primos que tiene.
+11.  Crear una función a la que se le pasa un número entero y devuelve un array con los divisores primos de dicho número.
+12. Escribir una función que calcule el máximo común divisor de dos números. 
+ 
+13. Escribir una función que calcule el máximo común divisor de tres números
+
+14. Escribir una función que calcule el máximo común divisor de los números contenidos en un array
+
+15. Escribir una función que calcule el mínimo común múltiplo de dos números .
+
+16. Escribir una función que calcule el mínimo común múltiplo de tres números. 
+17.  Escribir una función que calcule el mínimo común múltiplo de los números contenidos en un array.
+18. Escribir una función que indique si dos números enteros positivos son amigos. Dos números son amigos, si la suma de sus divisores (distintos de ellos mismos) son iguales.
+19.  	Escribir una función que indique si un número es primo.
+20.  	Escribir una función que reciba los parámetros a y n; y calcule la potencia n de a. (a  n). 
+21.   Escribir una función que muestre en binario un número entre 0 y 255.
+22.  	Escribir una función que sume los n primeros números impares.
+23.  	Escribir una función que calcule la distancia euclídea entre dos puntos del plano. Tener en cuenta que la función debe recibir 4 parámetros: las 2 coordenadas del primer punto y las 2 coordenadas del segundo punto. 
+Para más información sobre la distancia euclidiana: https://www.youtube.com/watch?v=aaSrjfMyq1Y
+24.  	Escribir una función a la que se le pasa como parámetro un array que debe rellenar. Se leerá por teclado una serie de números: guardar en el array solo los pares e ignorar los impares. También hay que devolver la cantidad de impares ignorados.
+25.  	Escribir una función a la que se le pasa un array de enteros y un número. Debe buscar el número en el array e indicar si se encuentra o no.
+
+
 ## ejercicios MIX
 - Ejercicio 1:
 Realizar programa que permita crear una función, la cual deberá recibir el nombre CalcularMayor,
@@ -247,21 +283,6 @@ por cada falta cometida.
             SUELDO NETO $XXXX.XX
 
 
-## ejercicios MIX 2
-0. Practica primera funcion sumar dos numeros declarados
-1. Armar una función, a la que se le pase como parámetro un número N, y muestre por pantalla N veces el mensaje: “Módulo ejecutándose”.
-2. Escribir una función que nos salude, pasándole un nombre por parámetro. Su salida debe decir por ejemplo ”Hola Aristoteles, ¿cómo estás?”.
-3.  Diseñar una función que tenga como parámetros dos números, y que calcule el máximo.
-4.  Idem al anterior pero que calcule el máximo de 3 números.
-5.  Idem al anterior pero que calcule el máximo de un array de n elementos.
-6. Se necesita crear una función a la que se le pasan por parámetro dos enteros y muestra todos los números comprendidos entre ellos, inclusive.
-7. Armar una función que muestre en pantalla el doble del valor que se le pasa como parámetro.
-8. Se necesita una función que calcule y muestre en pantalla el área o el volumen de un cilindro, según se especifique. Para distinguir un caso de otro, además de pasarle por parámetro el radio y la altura, se le pasará el carácter ’a’ (para área) o ’v’ (para el volumen).
-
-9. Idem al anterior pero que devuelva un array con ambos cálculos: el área y el volumen. 
-
-10. Crear una función a la que se le pasa un número entero y devuelve la cantidad de divisores primos que tiene.
-11.  Crear una función a la que se le pasa un número entero y devuelve un array con los divisores primos de dicho número.
 
 ## Analizar y comentar un programa --> AnalisisPetTicket
 - Escribir comentarios en el c´odigo para cada linea en particular, qu´e hace y por qu´e lo
