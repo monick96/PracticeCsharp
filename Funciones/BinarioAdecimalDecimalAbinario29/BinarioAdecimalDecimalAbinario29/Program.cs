@@ -16,7 +16,7 @@ namespace BinarioAdecimalDecimalAbinario29
              * puede usar por ejemplo una cadena de caracteres como el string ”0011” representa
              * el número 3, aunque también se puede usar un número del tipo long.*/
             int num;
-            num = 20;//10100
+            num = - 20;//- 10100
             long numB;
             numB = 110111; //55
 
@@ -32,12 +32,14 @@ namespace BinarioAdecimalDecimalAbinario29
         {
             string resultString = "";
             char[] arrayResult;
+            int valorAbsNum = Math.Abs(num);
+            
 
 
-            while(num >= 1)
+            while(valorAbsNum >= 1)
             {
-                int result = num % 2;
-                num = num / 2;
+                int result = valorAbsNum % 2;
+                valorAbsNum = valorAbsNum / 2;
                 resultString += Convert.ToString(result);
             }
             //se agraga el 1 de la ultima division 
@@ -54,7 +56,13 @@ namespace BinarioAdecimalDecimalAbinario29
             {
                 resultString += Convert.ToString(arrayResult[i]);
             }
-
+            
+            //caso en que el numero sea negativo
+            if (num < 0)
+            {
+                resultString = "- " + resultString;
+            }
+            
             return resultString;
         }
 
