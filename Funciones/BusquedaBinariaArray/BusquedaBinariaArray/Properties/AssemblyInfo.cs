@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BuscarEnArray25")]
+[assembly: AssemblyTitle("BusquedaBinariaArray")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BuscarEnArray25")]
+[assembly: AssemblyProduct("BusquedaBinariaArray")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0b9df0d8-b51a-464c-8994-ad1a2f932511")]
+[assembly: Guid("5c97c4df-d57d-40f2-a420-7b7205282a25")]
 
 // Version information for an assembly consists of the following four values:
 //

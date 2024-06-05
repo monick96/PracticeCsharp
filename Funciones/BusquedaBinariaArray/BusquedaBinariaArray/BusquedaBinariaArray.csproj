@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0B9DF0D8-B51A-464C-8994-AD1A2F932511}</ProjectGuid>
+    <ProjectGuid>{5C97C4DF-D57D-40F2-A420-7B7205282A25}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BuscarEnArray25</RootNamespace>
-    <AssemblyName>BuscarEnArray25</AssemblyName>
+    <RootNamespace>BusquedaBinariaArray</RootNamespace>
+    <AssemblyName>BusquedaBinariaArray</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

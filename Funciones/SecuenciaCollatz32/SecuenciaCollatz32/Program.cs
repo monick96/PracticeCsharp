@@ -25,7 +25,7 @@ namespace SecuenciaConjeturaCollatz32
 
             Msg($"Inicio: {num}");
             pasos = CantidadPasoSecuenciaCollatz(num);
-          
+           
             Console.ReadKey();
         }
         static uint CantidadPasoSecuenciaCollatz(uint num)
