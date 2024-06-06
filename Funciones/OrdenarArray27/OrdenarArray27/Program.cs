@@ -10,7 +10,12 @@ namespace OrdenarArray27
 
             int[] ints = {60,10,5,2,6,9,8,58};
 
+
             MostrarArray(OrdenarArrayInsercion(ints));
+
+            Console.WriteLine("");
+            MostrarArray(OrdenarArrayBurbuja(ints));
+
             Console.ReadKey();
         }
 
@@ -38,6 +43,29 @@ namespace OrdenarArray27
                 //inserto el elemento actual en la posicion correcta
                 array[poscionOrdenada + 1] = elementoActual;
 
+            }
+            return array;
+        }
+
+        static int[] OrdenarArrayBurbuja(int[] array)
+        { 
+            //for que recorre el array
+            for(int recorrido = 1 ;recorrido < array.Length;recorrido ++)
+            {   
+                //bucle interno que reccore el array y compara los elementos de a dos  
+                for(int i = 0; i < array.Length - recorrido; i++)
+                {
+                    //compara si el elemento actual es mayor al que sigue
+                    if (array[i] > array[i+1])
+                    {
+                        //si es true, intercambia
+                        int tempVar = array[i]; //guarda el elemento actual
+                        array[i] = array[i+1]; //mueve el menor elemento a la izquierda
+                        array[i+1] = tempVar; //asigna el elemento actual ala siguiente posicion,
+                                              //dezplaza hacia la derecha
+
+                    }
+                }
             }
             return array;
         }
