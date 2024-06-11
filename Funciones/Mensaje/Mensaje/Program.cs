@@ -11,18 +11,40 @@ namespace Mensaje
     {
         static void Main(string[] args)
         {
-            int n = 2;
+            int n;
+
+            Console.WriteLine("Ingrese un numero : ");
+            n = int.Parse(Console.ReadLine());
+
+            //invocacion funcion mensaje
+            Console.WriteLine("Funcion");
             Console.WriteLine(mensaje(n));
+
+            //lamado procedimiento mensaje
+            Console.WriteLine("Procedimiento");
+            mensajeP(n);
             Console.ReadKey();
         }
+        
+        //funcion mensaje
         static string mensaje(int n)
         {
             string msj = "";
             for (int i = 1; i <= n; i++)
             {
-                msj += "Modulo ejecutandose ";
+                msj += "Modulo ejecutandose \n";
             }
             return msj;
+            
+        }
+        
+        //procedimiento
+        static void mensajeP(int n)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                Console.WriteLine( "Modulo ejecutandose");
+            }
             
         }
     }
