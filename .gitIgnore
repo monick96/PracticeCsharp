@@ -20,6 +20,8 @@ obj/
 *.csproj
 *.sln
 
+.vscode
+
 
 # User-specific files
 *.rsuser
