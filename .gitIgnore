@@ -16,6 +16,11 @@
 bin/
 obj/
 
+# vs code
+*.csproj
+*.sln
+
+
 # User-specific files
 *.rsuser
 *.suo
