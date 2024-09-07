@@ -91,16 +91,16 @@
         <mxCell id="0LGMieh8fFYEPsuU7eUb-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="0LGMieh8fFYEPsuU7eUb-25">
           <mxGeometry y="104" width="390" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="0LGMieh8fFYEPsuU7eUb-32" value="+ registrarse(string nombreUsuario,string email, string pasword): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0LGMieh8fFYEPsuU7eUb-25">
+        <mxCell id="0LGMieh8fFYEPsuU7eUb-32" value="+ registrarse (string nombreUsuario,string email, string pasword): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0LGMieh8fFYEPsuU7eUb-25">
           <mxGeometry y="112" width="390" height="28" as="geometry" />
         </mxCell>
-        <mxCell id="0LGMieh8fFYEPsuU7eUb-33" value="+ iniciarSesion(string usuario, string password): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0LGMieh8fFYEPsuU7eUb-25">
+        <mxCell id="0LGMieh8fFYEPsuU7eUb-33" value="+ iniciarSesion (string usuario, string password): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0LGMieh8fFYEPsuU7eUb-25">
           <mxGeometry y="140" width="390" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="0LGMieh8fFYEPsuU7eUb-35" value="+ existeUsuario(string usuarioOEmail): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0LGMieh8fFYEPsuU7eUb-25">
+        <mxCell id="0LGMieh8fFYEPsuU7eUb-35" value="+ existeUsuario (string usuarioOEmail): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0LGMieh8fFYEPsuU7eUb-25">
           <mxGeometry y="166" width="390" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="0LGMieh8fFYEPsuU7eUb-34" value="+ validarPassword(string password): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0LGMieh8fFYEPsuU7eUb-25">
+        <mxCell id="0LGMieh8fFYEPsuU7eUb-34" value="+ validarPassword (string password): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="0LGMieh8fFYEPsuU7eUb-25">
           <mxGeometry y="192" width="390" height="26" as="geometry" />
         </mxCell>
       </root>
