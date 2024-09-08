@@ -21,7 +21,9 @@ namespace Ejercicio1Persona
             //clase usuario
             //creo una lista para almacenar usuarios
             List<Usuario> listaUsuarios = new List<Usuario> ();
+
             Usuario user1 = new Usuario("pedro","pedro.com","cocacola");
+
             Usuario user2 = new Usuario("pepe","pepe.com","gomitas");
 
             listaUsuarios.Add(user1);
@@ -46,7 +48,6 @@ namespace Ejercicio1Persona
             //si le paso al user 1 una contraseña incorrecta, envia un msje de error
             user1.iniciarSesion(listaUsuarios,"pedro","coca");
           
-
             //inicio de sesion correcto
             user1.iniciarSesion(listaUsuarios,"pedro","cocacola");
 
@@ -114,26 +115,34 @@ namespace Ejercicio1Persona
         public string email;
         public string password;
 
-
-
         //Metodos
         public Usuario(string nombreUsuarioParam, string emailParam,string passwordParam ){
 
             registrarse(nombreUsuarioParam, emailParam, passwordParam );
         }
 
+        public Usuario(){}
+
         public void registrarse(string nombreUsuarioParam, string emailParam,string passwordParam )
         {
             System.Console.WriteLine("Registro usuario");
             
             nombreUsuario = nombreUsuarioParam;
+
             email = emailParam;
+
             password = passwordParam;
 
             System.Console.WriteLine("Usuario registrado");
  
         }
 
+        /* metodo que recibe lista de usuarios guardados desde el main
+        *busca en la lista de usuarios el nombre ingresado por parametro
+        *si lo encuentra se corta el bucle, guarda el user
+        * compara con la contraseña recibida por parametro 
+        con la contraseña del usuario recuperado de la lista guardada
+        */
         public void iniciarSesion(List<Usuario> listaUsuarios, string nombreUsuarioParam, string passwordParam)
         {
             bool encontrado = false;
