@@ -185,9 +185,10 @@ información y principalmente la cantidad de decimales, si corresponde:
 Finalmente, se desea conocer número de empleado y sueldo total a pagar de quien recibe el mayor
 sueldo total.
 
-# Funciones
+        Fin secuencial
+# Funciones solo con ARRAY
 ## ejercicios MIX 2
--                         en proceso....
+-                         Concluido
 0. Practica primera funcion sumar dos numeros declarados
 1. Armar una función, a la que se le pase como parámetro un número N, y muestre por pantalla N veces el mensaje: “Módulo ejecutándose”.
 2. Escribir una función que nos salude, pasándole un nombre por parámetro. Su salida debe decir por ejemplo ”Hola Aristoteles, ¿cómo estás?”.
@@ -231,6 +232,21 @@ sueldo total.
 ●	https://www.unocero.com/ciencia/conjetura-collatz-terence-tao/
 ●	https://www.youtube.com/watch?v=q_dvxXc7d2Y
  
+### Ejercicio : Promedio de curso
+-  Realizar un programa  que permita calcular el mayor promedio de un curso de 30
+alumnos para poder asignar la beca al mismo.
+Para ello deberá cargarse la siguiente información de cada alumno:
+ Número de legajo
+ 3 notas parciales
+Para asegurarse el ingreso correcto de las notas, deberán validarse las mismas para que sea un número
+entre 1 y 10 en una función.
+Una vez validadas, deberá calcularse el promedio del alumno a quienes correspondan las mismas.
+También se desea conocer el promedio general y el porcentaje de aprobados y desaprobados del curso.
+Generar un nuevo vector, que contenga los promedios de los alumnos aprobados. Si existe, se deberá
+informar el nuevo vector generado.
+Al encontrar el mayor promedio, deberá informarse su número de legajo y la leyenda “recibe beca” para
+confirmarlo.
+
        pendiente
 ## ejercicios MIX
 - Ejercicio 1:
