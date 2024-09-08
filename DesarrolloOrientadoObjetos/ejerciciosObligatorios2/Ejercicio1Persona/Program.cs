@@ -268,7 +268,7 @@ namespace Ejercicio1Persona
     } 
 
     //clase cliente
-    public class Cliente 
+    public class Cliente:Usuario
     {
         //atributos
         public string direccionCalle;
@@ -305,8 +305,6 @@ namespace Ejercicio1Persona
             System.Console.WriteLine($"Codigo Postal: {direccionCP}");
             
         }
-
-
 
     } 
 }
