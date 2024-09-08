@@ -31,15 +31,7 @@ namespace Ejercicio1Persona
             listaUsuarios.Add(user2);
 
             //buscar si existe el usuario 
-            foreach (Usuario user in listaUsuarios)
-            {
-                //usuario que no existe
-                //user.existeUsuario("juan");
-
-                //usuario que existe
-                user.existeUsuario("pedro");
-                
-            }
+            user1.existeUsuario(listaUsuarios,"pedro");
             
             //validar contraseña del user1
             user1.passwordValida("cocacola");
@@ -50,6 +42,15 @@ namespace Ejercicio1Persona
           
             //inicio de sesion correcto
             user1.iniciarSesion(listaUsuarios,"pedro","cocacola");
+
+            //clase administrador
+            Administrador superAdmin = new Administrador();
+
+            superAdmin.verTodos(listaUsuarios);
+
+            superAdmin.borrarUsuario(listaUsuarios,"pepe");
+
+            superAdmin.verTodos(listaUsuarios);
 
 
         }
@@ -145,45 +146,63 @@ namespace Ejercicio1Persona
         */
         public void iniciarSesion(List<Usuario> listaUsuarios, string nombreUsuarioParam, string passwordParam)
         {
-            bool encontrado = false;
-
+            
             Usuario usuarioEncontrado = null;
-
-            foreach (Usuario user in listaUsuarios)
+            
+            if (existeUsuario(listaUsuarios,nombreUsuarioParam))
             {
-                if (existeUsuario(nombreUsuarioParam))
-                {
-                    encontrado = existeUsuario(nombreUsuarioParam);
-                    usuarioEncontrado = user;
-                    break;
-                }
-            }
+                
+                usuarioEncontrado = buscarUsuario(listaUsuarios,nombreUsuarioParam);
 
-            if (encontrado)
-            {
                 if (usuarioEncontrado.password.Equals(passwordParam))
                 {
+
                     System.Console.WriteLine("Ha iniciado Sesion");
+
+                }else
+                {
+                    System.Console.WriteLine("Datos incorrectos... intente nuevamente");
                 }
-
+                
             }
-            else
-            {
-                System.Console.WriteLine("Datos incorrectos... intente nuevamente");
-            }
-
 
         }
 
-        public bool existeUsuario(string emailOnombreUsuario)
+        public Usuario buscarUsuario(List<Usuario> listaUsuarios, string nombreUsuarioEmailParam)
+        {
+            Usuario usuarioEncontrado = null;
+
+            foreach (Usuario usuario in listaUsuarios)
+            {
+                if(usuario.nombreUsuario.Equals(nombreUsuarioEmailParam) || usuario.email.Equals(nombreUsuarioEmailParam))
+                {
+                    usuarioEncontrado = usuario;
+                    break;
+
+                }
+                    
+            }
+
+            return usuarioEncontrado;
+        }
+
+        public bool existeUsuario(List<Usuario> usuarios,string emailOnombreUsuario)
         {
             bool encontrado = false;
 
-            if (nombreUsuario.Equals(emailOnombreUsuario) || email.Equals(emailOnombreUsuario)){
+            Usuario usuario = null;
 
-                //System.Console.WriteLine("Usario encontrado");
+            usuario = buscarUsuario(usuarios,emailOnombreUsuario);
 
-                encontrado = true;
+            if(usuario != null)
+            {
+                if (nombreUsuario.Equals(emailOnombreUsuario) || email.Equals(emailOnombreUsuario))
+                {
+
+                    System.Console.WriteLine("Usario encontrado");
+
+                    encontrado = true;
+                }
 
             }else
             {
@@ -211,5 +230,37 @@ namespace Ejercicio1Persona
         }
 
     }
-    
+
+    public class Administrador:Usuario{
+
+        //Metodos
+        public Administrador(){}
+
+        public void borrarUsuario(List<Usuario> listaUsuarios, string nombreUsuarioParam)
+        {
+            Usuario usuario = null;
+
+            usuario = buscarUsuario(listaUsuarios, nombreUsuarioParam);
+
+            if(usuario != null)
+            {
+                
+                listaUsuarios.Remove(usuario);
+
+                System.Console.WriteLine($"el usuario {usuario.nombreUsuario} fue eliminado...");
+                
+            }
+ 
+        }
+
+        public void verTodos(List<Usuario> listaUsuarios)
+        {
+            System.Console.WriteLine("Lista de Usuarios:");
+
+            foreach (Usuario usuario in listaUsuarios)
+            {
+                System.Console.WriteLine(usuario.nombreUsuario);
+            }
+        }
+    }  
 }
