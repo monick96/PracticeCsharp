@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Ejercicio1Persona 
 {
@@ -6,6 +7,7 @@ namespace Ejercicio1Persona
     {
         static void Main(string[] args)
         {
+            //clase persona
             Console.WriteLine("Clase Persona");
 
             Persona pedro = new Persona("456978","Pedro","Pedro",18,'M');
@@ -15,6 +17,39 @@ namespace Ejercicio1Persona
             pedro.obtenerNombreYApellido();
 
             pedro.modificarEdad(19);
+
+            //clase usuario
+            //creo una lista para almacenar usuarios
+            List<Usuario> listaUsuarios = new List<Usuario> ();
+            Usuario user1 = new Usuario("pedro","pedro.com","cocacola");
+            Usuario user2 = new Usuario("pepe","pepe.com","gomitas");
+
+            listaUsuarios.Add(user1);
+        
+            listaUsuarios.Add(user2);
+
+            //buscar si existe el usuario 
+            foreach (Usuario user in listaUsuarios)
+            {
+                //usuario que no existe
+                //user.existeUsuario("juan");
+
+                //usuario que existe
+                user.existeUsuario("pedro");
+                
+            }
+            
+            //validar contraseña del user1
+            user1.passwordValida("cocacola");
+
+            //inicio de sesion incorrecto
+            //si le paso al user 1 una contraseña incorrecta, envia un msje de error
+            user1.iniciarSesion(listaUsuarios,"pedro","coca");
+          
+
+            //inicio de sesion correcto
+            user1.iniciarSesion(listaUsuarios,"pedro","cocacola");
+
 
         }
     }
@@ -44,6 +79,8 @@ namespace Ejercicio1Persona
 
         }
 
+        public Persona(){}
+
         public void saludar () 
         {
             System.Console.WriteLine($"Hola, soy {nombre}");
@@ -69,4 +106,101 @@ namespace Ejercicio1Persona
 
 
     }
+
+    public class Usuario:Persona
+    {
+        //Atributos
+        public string nombreUsuario;
+        public string email;
+        public string password;
+
+
+
+        //Metodos
+        public Usuario(string nombreUsuarioParam, string emailParam,string passwordParam ){
+
+            registrarse(nombreUsuarioParam, emailParam, passwordParam );
+        }
+
+        public void registrarse(string nombreUsuarioParam, string emailParam,string passwordParam )
+        {
+            System.Console.WriteLine("Registro usuario");
+            
+            nombreUsuario = nombreUsuarioParam;
+            email = emailParam;
+            password = passwordParam;
+
+            System.Console.WriteLine("Usuario registrado");
+ 
+        }
+
+        public void iniciarSesion(List<Usuario> listaUsuarios, string nombreUsuarioParam, string passwordParam)
+        {
+            bool encontrado = false;
+
+            Usuario usuarioEncontrado = null;
+
+            foreach (Usuario user in listaUsuarios)
+            {
+                if (existeUsuario(nombreUsuarioParam))
+                {
+                    encontrado = existeUsuario(nombreUsuarioParam);
+                    usuarioEncontrado = user;
+                    break;
+                }
+            }
+
+            if (encontrado)
+            {
+                if (usuarioEncontrado.password.Equals(passwordParam))
+                {
+                    System.Console.WriteLine("Ha iniciado Sesion");
+                }
+
+            }
+            else
+            {
+                System.Console.WriteLine("Datos incorrectos... intente nuevamente");
+            }
+
+
+        }
+
+        public bool existeUsuario(string emailOnombreUsuario)
+        {
+            bool encontrado = false;
+
+            if (nombreUsuario.Equals(emailOnombreUsuario) || email.Equals(emailOnombreUsuario)){
+
+                //System.Console.WriteLine("Usario encontrado");
+
+                encontrado = true;
+
+            }else
+            {
+
+                System.Console.WriteLine("Usuario no encontrado");
+
+            }
+
+            return encontrado;
+        }
+
+        public bool passwordValida(string passwordParam)
+        {
+            bool valido = false;
+            if(password.Equals(passwordParam))
+            {
+                valido = true;
+                System.Console.WriteLine("La contraseña es correcta");
+            }else
+            {
+                System.Console.WriteLine("La contraseña es incorrecta");
+            }
+
+            return valido;
+        }
+
+    }
+    
 }
