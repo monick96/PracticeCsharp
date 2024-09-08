@@ -205,6 +205,12 @@
         <mxCell id="Td3s1gOclOyyZpqenIAg-31" value="+ verTodos (Lista&amp;lt;Usuario&amp;gt; listaUsuarios): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Td3s1gOclOyyZpqenIAg-25">
           <mxGeometry y="62" width="413.75" height="26" as="geometry" />
         </mxCell>
+        <mxCell id="Td3s1gOclOyyZpqenIAg-36" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1880" y="584.6666666666666" as="sourcePoint" />
+            <mxPoint x="1880" y="-207" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
