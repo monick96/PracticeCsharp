@@ -76,7 +76,7 @@ namespace Ejercicio4Vehiculo
 
     }
 
-    public class Motocicleta:Vehiculo
+    public class Motocicleta:VehiculoTerrestre
     {
         
         //metodos
