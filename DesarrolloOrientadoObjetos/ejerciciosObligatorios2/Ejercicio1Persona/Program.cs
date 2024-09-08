@@ -52,6 +52,9 @@ namespace Ejercicio1Persona
 
             superAdmin.verTodos(listaUsuarios);
 
+            ///clase cliente
+            Cliente cliente1 = new Cliente("Lopez de Vega", "Argentina", "1200", "Buenos Aires", "Parque Chas","1813","1654646");
+            cliente1.mostrarDireccion();
 
         }
     }
@@ -262,5 +265,48 @@ namespace Ejercicio1Persona
                 System.Console.WriteLine(usuario.nombreUsuario);
             }
         }
-    }  
+    } 
+
+    //clase cliente
+    public class Cliente 
+    {
+        //atributos
+        public string direccionCalle;
+        public string direccionNumero;
+        public string direccionPais;
+        public string direccionProvincia;
+        public string direccionLocalidad;
+        public string direccionCP;
+        public string cuil;
+
+        //Metodos 
+        public Cliente(string direccionCalleParam, string direccionPaisParam,
+         string direccionNumeroParam, string direccionProvinciaParam, 
+         string direccionLocalidadParam, string direccionCPparam, string cuilParam)
+        {
+            direccionCalle = direccionCalleParam;
+            direccionNumero = direccionNumeroParam;
+            direccionPais = direccionPaisParam;
+            direccionProvincia = direccionProvinciaParam;
+            direccionLocalidad = direccionLocalidadParam;
+            direccionCP = direccionCPparam;
+            cuil = cuilParam;
+
+        }
+
+        public void mostrarDireccion()
+        {
+            System.Console.WriteLine("Direccion");
+            System.Console.WriteLine($"Calle: {direccionCalle}");
+            System.Console.WriteLine($"Numero: {direccionNumero}");
+            System.Console.WriteLine($"Pais: {direccionPais}");
+            System.Console.WriteLine($"Provincia: {direccionProvincia}");
+            System.Console.WriteLine($"Localidad: {direccionLocalidad}");
+            System.Console.WriteLine($"Codigo Postal: {direccionCP}");
+            
+        }
+
+
+
+    } 
 }
