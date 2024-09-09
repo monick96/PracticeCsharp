@@ -599,13 +599,13 @@
         <mxCell id="nrIQHIHiNLtlC4omfI30-161" value="DirectorTecnico" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="4150" y="160" width="200" height="112" as="geometry" />
         </mxCell>
-        <mxCell id="nrIQHIHiNLtlC4omfI30-162" value="+ antiguedad: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="nrIQHIHiNLtlC4omfI30-161" vertex="1">
+        <mxCell id="nrIQHIHiNLtlC4omfI30-162" value="+ antiguedadAnios: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="nrIQHIHiNLtlC4omfI30-161" vertex="1">
           <mxGeometry y="26" width="200" height="26" as="geometry" />
         </mxCell>
         <mxCell id="nrIQHIHiNLtlC4omfI30-164" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="nrIQHIHiNLtlC4omfI30-161" vertex="1">
           <mxGeometry y="52" width="200" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="nrIQHIHiNLtlC4omfI30-165" value="+ motivarjugadores(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="nrIQHIHiNLtlC4omfI30-161" vertex="1">
+        <mxCell id="nrIQHIHiNLtlC4omfI30-165" value="+ motivarJugadores(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="nrIQHIHiNLtlC4omfI30-161" vertex="1">
           <mxGeometry y="60" width="200" height="26" as="geometry" />
         </mxCell>
         <mxCell id="nrIQHIHiNLtlC4omfI30-166" value="+ armarEstrtegia(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="nrIQHIHiNLtlC4omfI30-161" vertex="1">
@@ -650,14 +650,14 @@
         <mxCell id="8ha-yDUmUQUJqswUf4xN-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="8ha-yDUmUQUJqswUf4xN-0">
           <mxGeometry y="52" width="200" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8ha-yDUmUQUJqswUf4xN-6" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8ha-yDUmUQUJqswUf4xN-3" target="nrIQHIHiNLtlC4omfI30-178">
+        <mxCell id="8ha-yDUmUQUJqswUf4xN-7" value="&lt;b&gt;Un equipo tiene varios miembros,&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;b&gt;y los miembros pertenecen a un equipo&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBorderColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="4230" y="-60" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8ha-yDUmUQUJqswUf4xN-8" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nrIQHIHiNLtlC4omfI30-178" target="8ha-yDUmUQUJqswUf4xN-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="4250" y="150" as="sourcePoint" />
             <mxPoint x="4300" y="100" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="8ha-yDUmUQUJqswUf4xN-7" value="&lt;b&gt;Un equipo tiene varios miembros,&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;b&gt;y los miembros pertenecen a un equipo&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBorderColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="4230" y="-60" width="250" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
