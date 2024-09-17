@@ -79,9 +79,9 @@ namespace VentaRopa
 
         
         /// <summary>
-        /// solo accsible desde la clase ropa, para cambiar valor, implemento calcularPrecioUnitario
+        /// solo accesible desde la clase ropa. Para cambiar valor implemento calcularPrecioUnitario
         /// que recibe por parametro el porcentaje a aumentar sobre el precio mayorista
-        /// y en ese llama al metodo setPrecioUnitario
+        /// y en ese metodo llama al metodo setPrecioUnitario
         /// </summary>
         private void setPrecioUnitario(float nuevoPrecioUnitario)
         {
