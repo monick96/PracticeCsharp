@@ -10,25 +10,49 @@ namespace VentaRopa
 
             //remera oversize caso en que se ingresan datos precio mayorista y unitario 
             //luego  de separar ropa mezclada
-           Remera remeraOversize = new Remera("s","Oversize");
-           remeraOversize.setNumeroStock(15);
-           remeraOversize.setPrecioMayorista(3000);
-           remeraOversize.CalcularPrecioUnitario();//10% por defecto
-           remeraOversize.mostrarInfo();
+            //cambiar talles o tipos a uno que no este en el array de talles o tipos para verificar que funcionan validaciones
+           Remera remeraOversize = new Remera("m","Oversize");
+           //validamos que el talle  y el tipo remera ingresado sea valido para continuar
+           if(remeraOversize.talleEsValido(remeraOversize.GetTalle()) && remeraOversize.tipoRemeraEsValido(remeraOversize.GetTipoRemera()))
+           {
+                remeraOversize.setNumeroStock(15);
+                remeraOversize.setPrecioMayorista(3000);
+                remeraOversize.CalcularPrecioUnitario();//10% por defecto
+                remeraOversize.mostrarInfo();
+           }else
+           {
+                System.Console.WriteLine("El talle o tipo de remera no es valido");
+           }
+           
 
             //abrigo buzo-> caso que se ingresa el precio mayorista del producto 
             //y se calcula el precio unitario con 10% sbre el precio mayorista
            Abrigo abrigoBuzo = new Abrigo(6000,"s","Buzo");
-           abrigoBuzo.mostrarInfo();
+           //validamos talle y tipo
+           if (abrigoBuzo.talleEsValido(abrigoBuzo.GetTalle()) && abrigoBuzo.tipoAbrigoEsValido(abrigoBuzo.GetTipoAbrigo()))
+           {
+                abrigoBuzo.mostrarInfo();
+            
+           }else
+           {
+                System.Console.WriteLine("El talle o tipo de Abrigo no es valido");
+           }
+           
 
            //pantalon Jean-> caso que se ingresaran todos los datos de un producto
            //y precio mayorista se ajusta a mas del 10%
            Pantalon pantalonJean = new Pantalon(400,"Pantalones Jean",12000,"Jean",40);
-           pantalonJean.CalcularPrecioUnitario(15);//10% por defecto
-           pantalonJean.mostrarInfo();
-           
-                 
-
+           //validamos talle y tipo
+           if (pantalonJean.talleEsValido(pantalonJean.GetTalle()) && pantalonJean.tipoPantalonEsValido(pantalonJean.GetTipoPantalon()))
+           {
+                pantalonJean.CalcularPrecioUnitario(15);//10% por defecto
+                pantalonJean.mostrarInfo();
+            
+           }else
+           {
+                System.Console.WriteLine("El talle o tipo de Abrigo no es valido");
+           }
+  
         }
     }
 
@@ -131,7 +155,9 @@ namespace VentaRopa
     public class Pantalon : Ropa 
     {
         private string tipo;//jean , joggin
-        private int talle;//talles del 35 al 52
+
+        private string [] tiposPantalon = {"Jean","Joggin"};
+        private int talle;//talles del 36 al 52
         public Pantalon(string tipo, int talle):base()
         {
             this.talle = talle;
@@ -149,6 +175,45 @@ namespace VentaRopa
             this.talle = talle;
             this.tipo = tipo;
         }
+
+        public string GetTipoPantalon()
+        {
+            return this.tipo;
+        }
+
+        public int GetTalle()
+        {
+            return this.talle;
+        }
+
+        public bool talleEsValido(int talle)
+        {
+            bool talleValido = false;
+            //verificamos si el talle es par y si esta entre los numeros 36 y 52 inclusive
+            if ((talle %2 == 0 )&& (talle >=36 && talle <= 52))
+            {
+                talleValido = true;
+                
+            }
+
+            return talleValido;
+        }
+
+        public bool tipoPantalonEsValido(string tipoPantalon)
+        {
+            bool tipoPantalonValido = false;
+            for (int i = 0; i < this.tiposPantalon.Length; i++)
+            {
+                if (this.tiposPantalon[i].ToLower().Equals(tipoPantalon.ToLower()))
+                {
+                    tipoPantalonValido = true;
+                    break;
+                }
+            }
+
+            return tipoPantalonValido;
+        }
+        
 
         public void mostrarInfo()
         {
@@ -175,6 +240,8 @@ namespace VentaRopa
  
             System.Console.WriteLine("-----------------------------------");
         }
+
+        
     }
 
     //clase que no se instancia sirve para que abigo y remera compartan el atributo talle
@@ -183,9 +250,12 @@ namespace VentaRopa
     {
         protected string talle; //S,M,L, etc
 
+        protected string [] talles= {"S","M","L","XL"};
+
         public RopaTalleAlphaSizing(string talle):base()
         {
             this.talle = talle;
+            
             
         }
 
@@ -193,18 +263,41 @@ namespace VentaRopa
         {
             this.talle = talle;
             
+            
         }
 
         public RopaTalleAlphaSizing(int numeroStock, string nombrePresentacion,float precioMayorista,string talle):base(numeroStock, nombrePresentacion,precioMayorista)
         {
             this.talle = talle;
             
+            
+        }
+
+        public string GetTalle()
+        {
+            return this.talle;
+        }
+
+        public bool talleEsValido(string talle)
+        {
+            bool talleValido = false;
+            for (int i = 0; i < this.talles.Length; i++)
+            {
+                if (this.talles[i].Equals(talle.ToUpper()))
+                {
+                    talleValido = true;
+                    break;
+                }
+            }
+
+            return talleValido;
         }
     }
 
     public class Remera : RopaTalleAlphaSizing
     {
         private string tipo; // clasicas,oversize, top
+        private string[] tiposRemera = {"Clasicas","Oversizes","Top"};
 
         public Remera(string talle, string tipo):base(talle)
         {
@@ -220,6 +313,26 @@ namespace VentaRopa
         base(numeroStock,nombrePresentacion,precioMayorista,talle)
         {
             this.tipo = tipo;
+        }
+
+        public string GetTipoRemera()
+        {
+            return this.tipo;
+        }
+
+        public bool tipoRemeraEsValido(string tipoRemera)
+        {
+            bool tipoRemeraValido = false;
+            for (int i = 0; i < this.tiposRemera.Length; i++)
+            {
+                if (this.tiposRemera[i].ToLower().Equals(tipoRemera.ToLower()))
+                {
+                    tipoRemeraValido = true;
+                    break;
+                }
+            }
+
+            return tipoRemeraValido;
         }
 
         public void mostrarInfo()
@@ -252,6 +365,8 @@ namespace VentaRopa
     {
         private string tipo;// sweater,buzos, camperas
 
+        private string[] tiposAbrigo = {"Sweater","Buzo","Campera"};
+
         public Abrigo(string talle, string tipo):base(talle)
         {
             this.tipo = tipo;
@@ -266,6 +381,26 @@ namespace VentaRopa
          base(numeroStock, nombrePresentacion,precioMayorista,talle)
         {
             this.tipo = tipo;
+        }
+
+        public string GetTipoAbrigo()
+        {
+            return this.tipo;
+        }
+
+        public bool tipoAbrigoEsValido(string tipoAbrigo)
+        {
+            bool tipoAbrigoValido = false;
+            for (int i = 0; i < this.tiposAbrigo.Length; i++)
+            {
+                if (this.tiposAbrigo[i].ToLower().Equals(tipoAbrigo.ToLower()))
+                {
+                    tipoAbrigoValido = true;
+                    break;
+                }
+            }
+
+            return tipoAbrigoValido;
         }
 
         public void mostrarInfo()
