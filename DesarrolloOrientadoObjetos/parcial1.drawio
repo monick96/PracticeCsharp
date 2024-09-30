@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1230" dy="426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2057" dy="426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -122,6 +122,9 @@
             <mxPoint x="355" y="330" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Cts_d8yoqNM8cl1k1tXQ-17" value="&lt;div style=&quot;color: #cccccc;background-color: #1f1f1f;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;/*&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp; &amp;nbsp; 1) &amp;nbsp;Se necesita desarrollar una aplicación para administrar la información de los integrantes de un club de futbol. &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp; &amp;nbsp; Hay tres tipos de integrantes: jugadores, entrenadores y administrativos. &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp; &amp;nbsp; De todos ellos se necesita registrar su nombre, apellido y edad. &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp; &amp;nbsp; Además, para los jugadores se requiere ingresar la posición (entero) y la categoría &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp; &amp;nbsp; (string); para los entrenadores se debe registrar los años de experiencia y&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;para los administrativos la profesión y el puesto que ocupa. &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp; &amp;nbsp; Se pide: Definir las clases necesarias para llevar a cabo el almacenamiento y &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp; &amp;nbsp; lectura de los integrantes del club. Incluir los métodos constructores de cada clase.&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;&amp;nbsp; &amp;nbsp; */&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-40" y="470" width="560" height="230" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
