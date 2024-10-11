@@ -7,6 +7,10 @@ namespace EjerciciosObligatorios
     {
         static void Main(string[] args)
         {
+            //Resulta que lei que en chsarp se usa la convencion PascalCase, 
+            //yo venia acostumbrada de Java al camelCase, 
+            //asi que desde ahora en mas usare el PascalCase
+
             //declaracion de array con longitud para cinco personas
             Persona[] agenda = new Persona[5];
 
@@ -28,9 +32,9 @@ namespace EjerciciosObligatorios
             //quien cumple anios hoy
             foreach (Persona persona in agenda)
             {
-                if (persona.esSuCumpleHoy())
+                if (persona.EsSuCumpleHoy())
                 {
-                    persona.notificarCumpleanio();
+                    persona.NotificarCumpleanio();
                 }
                 
             }
@@ -60,12 +64,12 @@ namespace EjerciciosObligatorios
             return this.fechaNacimiento;
         }
 
-        public void notificarCumpleanio()
+        public void NotificarCumpleanio()
         {
             System.Console.WriteLine($"felicitar a {this.nombre} {this.apellido} por su cumpleaños al celular {this.telefono}");
         }
 
-        public bool esSuCumpleHoy()
+        public bool EsSuCumpleHoy()
         {
             bool esCumpple = false;
             DateTime fechaDeHoy = DateTime.Now;
