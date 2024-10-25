@@ -5,7 +5,8 @@ namespace Ejercicio3
         private float montoPagoCliente;
         private Cliente cliente;
 
-        public PagoConEfectivo(DateTime fecha, float montoPagoCliente, Cliente cliente):base(fecha, monto)
+        public PagoConEfectivo(DateTime fecha,float monto, float montoPagoCliente,
+         Cliente cliente):base(fecha, monto)
         {
             this.montoPagoCliente = montoPagoCliente;
             this.cliente = cliente;
@@ -19,9 +20,20 @@ namespace Ejercicio3
             }
             else
             {
-                System.Console.WriteLine("Monto no valido");
+                System.Console.WriteLine("--------------------");
+                System.Console.WriteLine($"Monto no valido, ${this.montoPagoCliente}\nes menor al total");
+                System.Console.WriteLine("--------------------");
             }
             
+        }
+
+        public override void MostrarRecibo()
+        {
+            System.Console.WriteLine("------------------------------------");
+            System.Console.WriteLine("**Recibo**");
+            System.Console.WriteLine($"Cliente: {this.cliente.GetName()}");
+            base.MostrarRecibo();
+            System.Console.WriteLine($"Recibimos: ${this.montoPagoCliente}");
         }
 
         public bool Validar()

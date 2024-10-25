@@ -15,9 +15,8 @@ namespace Ejercicio3
 
         public virtual void MostrarRecibo()
         {
-            System.Console.WriteLine("**Recibo**");
-            System.Console.WriteLine($"Monto: {this.fecha}");
-            System.Console.WriteLine($"Monto: {this.monto}");
+            System.Console.WriteLine($"Fecha: {this.fecha}");
+            System.Console.WriteLine($"Monto: ${this.monto}");
         }
     }
 }
