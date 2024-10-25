@@ -17,7 +17,7 @@ namespace EquipoSoftware
         {
             System.Console.WriteLine("Puesto : Tester");
             base.MostrarInfo();
-            System.Console.WriteLine($"Tipo de Testing: {this.tipoTesting.ToString()}");
+            System.Console.WriteLine($"Tipo de Testing: {this.tipoTesting}");
             System.Console.WriteLine("------------------------");
         }
         
