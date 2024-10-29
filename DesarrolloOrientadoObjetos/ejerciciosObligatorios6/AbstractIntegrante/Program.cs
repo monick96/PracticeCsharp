@@ -17,9 +17,19 @@ namespace Ejercicio2
             int option = 0;
             // Inicializamos un array vacío
             Integrante[] integrantes = new Integrante[0];
-            //contador para hacer el rezise
-            int count = 0;
+           
+            CargarIntegrantes(option, ref integrantes);
 
+            foreach (Integrante integrante in integrantes)
+            {
+                integrante.MostrarInfo();
+            }
+        }
+
+
+        
+        public static void CargarIntegrantes(int option, ref Integrante[] integrantes)
+        {
             while (option != 4)
             {
                 System.Console.WriteLine("Menu creacion Integrantes");
@@ -28,6 +38,8 @@ namespace Ejercicio2
                 System.Console.WriteLine("3 - Crear Administrativo");
                 System.Console.WriteLine("4 - Salir");
                 
+                //contador para hacer el rezise
+                int count = 0;
                 option = int.Parse(Console.ReadLine());
 
                 switch (option) 
@@ -93,14 +105,8 @@ namespace Ejercicio2
                         break;
                 
                 }
-
-
-            }
-
-            foreach (Integrante integrante in integrantes)
-            {
-                integrante.MostrarInfo();
-            }
+            }  
         }
     }
+
 }

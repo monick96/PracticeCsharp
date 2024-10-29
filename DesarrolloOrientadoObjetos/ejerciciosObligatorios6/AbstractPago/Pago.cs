@@ -1,6 +1,6 @@
 namespace Ejercicio3
 {
-    abstract class Pago
+    internal abstract class Pago
     {
         protected DateTime fecha;
         protected float monto;

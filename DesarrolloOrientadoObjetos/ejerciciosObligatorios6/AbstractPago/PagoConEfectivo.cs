@@ -1,6 +1,6 @@
 namespace Ejercicio3
 {
-    class PagoConEfectivo: Pago, IValidar
+    internal class PagoConEfectivo: Pago, IValidar
     {
         private float montoPagoCliente;
         private Cliente cliente;
@@ -47,9 +47,6 @@ namespace Ejercicio3
 
             return montoValido;
         }
-
-
-
 
     }
 }
