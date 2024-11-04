@@ -78,7 +78,7 @@
         <mxCell id="HzeTAMi_sClSE_B05zpU-1" value="- nombre:string" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="HzeTAMi_sClSE_B05zpU-0">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="HzeTAMi_sClSE_B05zpU-2" value="- peces: array" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="HzeTAMi_sClSE_B05zpU-0">
+        <mxCell id="HzeTAMi_sClSE_B05zpU-2" value="- peces: array o lista" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="HzeTAMi_sClSE_B05zpU-0">
           <mxGeometry y="52" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="HzeTAMi_sClSE_B05zpU-6" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="HzeTAMi_sClSE_B05zpU-0">
@@ -98,6 +98,37 @@
         </mxCell>
         <mxCell id="HzeTAMi_sClSE_B05zpU-83" value="Se debe diferenciar los peces de agua dulce de los peces de&amp;nbsp;&lt;div&gt;agua salada, siendo que los de&lt;br&gt;agua dulce deben almacenar la temperatura del agua&amp;nbsp;&lt;/div&gt;&lt;div&gt;y pH del agua y los de agua salada si&lt;br&gt;requieren de corales y/o algas marinas.&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-110" y="180" width="210" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="HzeTAMi_sClSE_B05zpU-86" value="«interface»&#xa;INadador" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="560" y="390" width="160" height="120" as="geometry">
+            <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzeTAMi_sClSE_B05zpU-89" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="HzeTAMi_sClSE_B05zpU-86">
+          <mxGeometry y="40" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="HzeTAMi_sClSE_B05zpU-88" value="+VelocidadNado():void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="HzeTAMi_sClSE_B05zpU-86">
+          <mxGeometry y="48" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HzeTAMi_sClSE_B05zpU-87" value="+ Nadar():void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="HzeTAMi_sClSE_B05zpU-86">
+          <mxGeometry y="74" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HzeTAMi_sClSE_B05zpU-94" value="Crear una interfaz INadador que defina los métodos Nadar y VelocidadNado para los peces&#xa;que naden.&#xa;Para los peces que no nadan activamente o que se mueven poco, crear la interfaz&#xa;IPezEstatico y crear los métodos Camuflarse y AdherirseASuperficie.&#xa;Para registrarlos, se debe crear una lista o arreglo de objetos (de la clase Abstracta Pez). Se&#xa;debe imprimir la lista mostrando por consola los peces almacenados con sus características." style="text;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="810" y="240" width="280" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="HzeTAMi_sClSE_B05zpU-95" value="«interface»&#xa;IPezEstatico" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="550" y="540" width="180" height="120" as="geometry">
+            <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzeTAMi_sClSE_B05zpU-96" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="HzeTAMi_sClSE_B05zpU-95">
+          <mxGeometry y="40" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="HzeTAMi_sClSE_B05zpU-97" value="+Camuflarse():void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="HzeTAMi_sClSE_B05zpU-95">
+          <mxGeometry y="48" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HzeTAMi_sClSE_B05zpU-98" value="+ AdherirseAsuperficie():void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="HzeTAMi_sClSE_B05zpU-95">
+          <mxGeometry y="74" width="180" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
