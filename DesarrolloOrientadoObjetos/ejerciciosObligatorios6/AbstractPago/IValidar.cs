@@ -1,6 +1,6 @@
 namespace Ejercicio3
 {
-    interface IValidar
+    internal interface IValidar
     {
        public bool Validar();
     }

@@ -1,6 +1,6 @@
 namespace Ejercicio3
 {
-    class Cliente
+    internal class Cliente
     {
         private string nombre;
 
