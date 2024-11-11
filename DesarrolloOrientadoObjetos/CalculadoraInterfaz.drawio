@@ -21,7 +21,7 @@
         <mxCell id="7mY2wDfysJz_4YX6mIlb-19" value="+ multiplicar(a, b):int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="7mY2wDfysJz_4YX6mIlb-15">
           <mxGeometry y="100" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="7mY2wDfysJz_4YX6mIlb-20" value="+ dividir(a, b):float" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="7mY2wDfysJz_4YX6mIlb-15">
+        <mxCell id="7mY2wDfysJz_4YX6mIlb-20" value="+ dividir(a, b):int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="7mY2wDfysJz_4YX6mIlb-15">
           <mxGeometry y="126" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="7mY2wDfysJz_4YX6mIlb-22" value="CalculadoraCientifica" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -75,7 +75,7 @@
         <mxCell id="7mY2wDfysJz_4YX6mIlb-34" value="multiplicar(a, b):int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="7mY2wDfysJz_4YX6mIlb-30">
           <mxGeometry y="100" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="7mY2wDfysJz_4YX6mIlb-35" value="dividir(a, b):float" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="7mY2wDfysJz_4YX6mIlb-30">
+        <mxCell id="7mY2wDfysJz_4YX6mIlb-35" value="dividir(a, b):int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="7mY2wDfysJz_4YX6mIlb-30">
           <mxGeometry y="126" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="7mY2wDfysJz_4YX6mIlb-37" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="7mY2wDfysJz_4YX6mIlb-19" target="7mY2wDfysJz_4YX6mIlb-33">
